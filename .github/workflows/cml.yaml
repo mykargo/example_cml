@@ -15,7 +15,7 @@ jobs:
 
   train-and-report:
     needs: launch-runner
-    runs-on: [self-hosted, cml-gpu]
+    runs-on: [self-hosted, lambda]
     timeout-minutes: 50400 # 35 days
     container:
       image: docker://iterativeai/cml:0-dvc2-base1-gpu
